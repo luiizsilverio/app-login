@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "app-login",
-    "slug": "app-login",
+    "name": "formapp",
+    "slug": "formapp",
+    "scheme": "formapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

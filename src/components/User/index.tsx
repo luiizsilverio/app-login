@@ -2,19 +2,30 @@ import React from 'react';
 
 import { Container, Photo, Name, Email } from './styles';
 
-export function User() {
+export interface UserProps {
+  email: string;
+  name: string;
+  picture: string;
+}
+
+type Props = {
+  user: UserProps;  
+}
+
+export function User({ user }: Props) {
+  
   return (
     <Container>
       <Photo
-        source={{ uri: "https://github.com/rodrigorgtic.png" }}
+        source={{ uri: user.picture }}
       />
 
       <Name>
-        Rodrigo
+        {user.name}
       </Name>
 
       <Email>
-        rodrigo@email.com
+        {user.email}
       </Email>
     </Container>
   );
